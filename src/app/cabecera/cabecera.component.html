@@ -1,0 +1,22 @@
+<link rel="stylesheet"
+href="https://unpkg.com/chota">
+<div *ngIf="libroService.verListado()">
+    <h2 >Libros vistos</h2>
+    <ul *ngFor = "let libro of libroService.verListado()">
+        <li>{{libro.titulo}}</li>
+    </ul>
+</div>
+<div *ngIf="cdService.verListado()">
+    <h2 >CDS vistos</h2>
+    <ul *ngFor = "let cd of cdService.verListado()">
+        <li>{{cd.autor}}</li>
+    </ul>
+</div>
+
+<div class="content">
+    <p><a [routerLink]="['/listado-libros']" class="button">Listado Libros</a> 
+        <a [routerLink]="['/listado-cds']" class="button">Listado CDS</a> 
+        <a href="/" class="button">Inicio</a>
+    </p>
+</div>
+

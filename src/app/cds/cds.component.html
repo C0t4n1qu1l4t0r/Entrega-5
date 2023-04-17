@@ -1,0 +1,2 @@
+<ngx-spinner type="ball-beat" >Loading</ngx-spinner>
+<p *ngFor = "let cd of cds"><a [routerLink]="['/informacionCds', cd.id]" (click)="agregarCds(cd)">{{cd.autor}}</a></p>

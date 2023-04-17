@@ -1,0 +1,9 @@
+<div *ngIf="cdClick">
+    <h2>Autor: {{cdClick.autor}}</h2>
+    <span>Precio: {{cdClick.precio}}</span><br>
+    <span>Canciones: </span>
+    <ul *ngFor = "let cancion of cdClick.canciones">
+        <li *ngIf="cancion.idAutor == cdClick.id">{{cancion.nombre}}
+        </li>
+    </ul>
+</div>

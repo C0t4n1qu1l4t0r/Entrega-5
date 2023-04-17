@@ -1,0 +1,16 @@
+[
+    {"id": 5, "autor": "Juan", "precio": "10", "canciones": [
+        {"nombre": "cancion 1", "idAutor": 1},
+        {"nombre": "cancion 2", "idAutor": 1},
+        {"nombre": "cancion 3", "idAutor": 2},
+        {"nombre": "cancion 4", "idAutor": 2},
+        {"nombre": "cancion 5", "idAutor": 2}
+    ]},
+    {"id": 7, "autor": "Alberto", "precio": "20", "canciones": [
+        {"nombre": "cancion 1", "idAutor": 1},
+        {"nombre": "cancion 2", "idAutor": 1},
+        {"nombre": "cancion 3", "idAutor": 2},
+        {"nombre": "cancion 4", "idAutor": 2},
+        {"nombre": "cancion 5", "idAutor": 2}
+    ]}
+  ]

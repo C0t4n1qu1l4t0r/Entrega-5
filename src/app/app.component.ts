@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Entrega5_RazvanCotan';
+  title = 'Razvan Cotan';
+  condicion: boolean = true;
+  boton: string = "Ver";
+  dias_semana:string = "";
+  vblecolor: string | undefined;
+  color: string | undefined;
+  funcion(){
+    this.condicion = !this.condicion;
+    if(this.condicion == true){
+      this.boton = "Ocultar";
+    }else{
+      this.boton = "Ver";
+    }
+  }
 }
